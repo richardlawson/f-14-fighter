@@ -18,9 +18,9 @@ MovingGameObjectCollection.prototype.move = function(){
  	} 
 }
 
-MovingGameObjectCollection.prototype.destroyAndRemoveItem = function(MovingGameObject){
- 	MovingGameObject.destroy();
- 	this.removeItem(MovingGameObject); 
+MovingGameObjectCollection.prototype.destroyAndRemoveItem = function(movingGameObject){
+ 	movingGameObject.destroy();
+ 	this.removeItem(movingGameObject); 
 }
 
 MovingGameObjectCollection.prototype.destroyAndRemoveItemAt = function(pos){

@@ -74,18 +74,23 @@ function GameController(){
 			if(!gameOver){
 				switch(event.which){
 					case 37: // CURSOR KEYS
+						event.preventDefault();
 						ship.movingLeft = true;
 						break;
 					case 38:	
+						event.preventDefault();
 						ship.movingUp = true;
 						break;
 					case 39:
+						event.preventDefault();
 						ship.movingRight = true;
 						break; 
 					case 40:
+						event.preventDefault();
 						ship.movingDown = true;
 						break;
 					case 32: // SPACEBAR KEY
+						event.preventDefault();
 						if(ship.rocketFireable){
 							var rocket = ship.fireRocket();
 							rockets.addItem(rocket);
@@ -100,18 +105,23 @@ function GameController(){
 			if(!gameOver){
 				switch(event.which){
 					case 37: // CURSOR KEYS
+						event.preventDefault();
 						ship.movingLeft = false;
 						break;
-					case 38:	
+					case 38:
+						event.preventDefault();
 						ship.movingUp = false;
 						break;
 					case 39:
+						event.preventDefault();
 						ship.movingRight = false;
 						break; 
 					case 40:
+						event.preventDefault();
 						ship.movingDown = false;
 						break;
 					case 32: // SPACEBAR KEY
+						event.preventDefault();
 						ship.rocketFireable = true;
 						break;
 				}
